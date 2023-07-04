@@ -45,17 +45,25 @@ const showAllProducts = () => {
       "lg:w-1/3",
       "xl:w-1/4",
       "px-6",
-      "py-4"
+      "py-4",
+      "border",
+      "flex",
+      "flex-col",
+      "justify-center"
     );
+
+    const topPart = document.createElement("div");
 
     const productImage = document.createElement("img");
     productImage.src = product.image;
-    card.appendChild(productImage);
+    topPart.appendChild(productImage);
 
     const productName = document.createElement("h3");
     productName.textContent = product.name;
     productName.classList.add("mt-2");
-    card.appendChild(productName);
+    topPart.appendChild(productName);
+
+    card.appendChild(topPart);
 
     const productPrice = document.createElement("h1");
     productPrice.textContent = `$ ${product.price.toFixed(2)}`;

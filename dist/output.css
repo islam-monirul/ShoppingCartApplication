@@ -2493,6 +2493,10 @@ video {
   .md\:w-full {
     width: 100%;
   }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2502,6 +2506,18 @@ video {
 
   .lg\:w-2\/3 {
     width: 66.666667%;
+  }
+
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
+  .lg\:w-1\/4 {
+    width: 25%;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 }
 
